@@ -1,0 +1,70 @@
+body {
+  font-family: sans-serif;
+  background-color: #e5e5e5;
+height:140vh;
+display:flex;
+justify-content: center;
+align-items: center;
+}
+
+.app {
+  background: white;
+  width: 300px;
+  height: 500px;
+  border: 2px solid #abcea1;
+  border-radius: 8px;
+  padding: 15px;
+  overflow-y: scroll;
+}
+
+.app::-webkit-scrollbar {
+  width: 0 !important;
+}
+
+#addNew {
+  display: flex;
+  background: rgba(171, 206, 161, 0.35);
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 10px;
+  border-radius: 9px;
+  cursor: pointer;
+}
+
+.fa-plus {
+  background: #abcea1;
+  padding: 3px;
+  border-radius: 3px;
+}
+
+#tasks {
+  display: grid;
+  gap: 14px;
+}
+
+#tasks div {
+  background-color: #e2eede;
+  border: 3px solid #abcea1;
+  padding: 5px;
+  border-radius: 6px;
+  display: grid;
+  gap: 4px;
+}
+.options {
+  justify-self: center;
+  display: flex;
+  gap: 10px;
+}
+.options i {
+  cursor: pointer;
+}
+h5{
+  letter-spacing:5px;
+  text-shadow: red 0 0,cyan 0 0;
+transition: text-shadow 200ms;
+
+}
+
+h5:hover{
+text-shadow: red -6px 0,cyan 6px 0;
+}
